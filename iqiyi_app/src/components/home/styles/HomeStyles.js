@@ -3,6 +3,30 @@ import { StyleSheet, Dimensions } from 'react-native'
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 export const HomeStyles = StyleSheet.create({
+    headerContainer : {
+        position : 'absolute'
+    },
+    slideHot : {
+        height : '45%'
+    },
+    title_unfocus : {
+        color : '#ffffff80',
+        fontSize : 16,
+        marginTop : 10
+    },
+    titile_focus : {
+        color : 'white',
+        fontSize : 18,
+        marginTop : 10
+    },
+    title : {
+        fontFamily : 'Inter-Medium',
+        marginEnd : 20
+    },
+    categories : {
+        width : '100%',
+        height : 50,
+    },
     oneline_horiz : {
         width : 1,
         height : '50%',
@@ -54,12 +78,12 @@ export const HomeStyles = StyleSheet.create({
     header : {
         width : WIDTH,
         height : 65,
-        backgroundColor : '#2e3034',
+        // backgroundColor : '#2e3034',
         flexDirection : 'row',
         paddingHorizontal : 10,
         alignItems : 'center',
         justifyContent : 'space-between',
-        paddingTop : 15
+        paddingTop : 15,
     },
     container : {
         flex : 1,
